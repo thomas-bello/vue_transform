@@ -53,8 +53,12 @@ class VueFileTransform {
     })
     this.scriptAst = this.content2Ast(descriptor?.script?.content, {
       presets: [
-        ['@babel/preset-env', { modules: false }],
-        '@babel/preset-typescript'
+        [
+          '@babel/preset-typescript',
+          {
+            allExtensions: true
+          }
+        ]
       ],
       plugins: [
         ['@babel/plugin-proposal-decorators', { legacy: true }],

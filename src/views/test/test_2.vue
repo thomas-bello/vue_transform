@@ -2,7 +2,7 @@
   <div>
     <div>test2</div>
     <auth ele="test2Block" name="test2的块" authType="abc">test2</auth>
-    <auth ele="test5Block" name="test5的块" authType="abce">test5</auth>
+    <auth ele="test5Block" name="test5的块" :authType="'abce'">test5</auth>
     <auth ele="test2Block" name="test4的块">test4</auth>
     <div>test5</div>
 
